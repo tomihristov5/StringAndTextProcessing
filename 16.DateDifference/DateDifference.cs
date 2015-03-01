@@ -1,8 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿// Problem 16. Date difference
+// Write a program that reads two dates in the format: day.month.year and calculates the number of days between them.
+
+using System;
 
 namespace _16.DateDifference
 {
@@ -14,13 +13,8 @@ namespace _16.DateDifference
             DateTime firstDate = DateTime.Parse(Console.ReadLine());
             Console.WriteLine("Enter second date in format day.month.year: ");
             DateTime secondDate = DateTime.Parse(Console.ReadLine());
-            int days = firstDate.Day - secondDate.Day;
-            if (firstDate.Day > secondDate.Day)
-            {
-                Console.WriteLine(DateTime.DaysInMonth(firstDate.Year, firstDate.Month) - days);
-            }
-            else
-                Console.WriteLine(days);
+            TimeSpan result = firstDate - secondDate;
+            Console.WriteLine("The difference is {0} days", (Math.Abs(result.TotalDays)));
         }
     }
 }
