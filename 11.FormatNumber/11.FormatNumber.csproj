@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{3D15C191-C7CF-4280-9D22-CA61F9506F47}</ProjectGuid>
+    <ProjectGuid>{822840D8-1D8D-4A98-B0EF-14085A05B9A7}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>_03.CorrectBrackets</RootNamespace>
-    <AssemblyName>03.CorrectBrackets</AssemblyName>
+    <RootNamespace>_11.FormatNumber</RootNamespace>
+    <AssemblyName>11.FormatNumber</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -41,7 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CorrectBrackets.cs" />
+    <Compile Include="FormatNumber.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
